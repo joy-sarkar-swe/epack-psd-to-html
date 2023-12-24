@@ -1,0 +1,17 @@
+// styles.scss
+
+// Import variables and mixins
+@import "variables";
+@import "mixins";
+
+// Import base styles
+@import "_base/reset";
+
+// Import layout styles
+@import "_layout/header";
+@import "_layout/footer";
+
+// Import page-specific styles
+@import "_pages/home";
+@import "_pages/tarifas";
+@import "_pages/about";

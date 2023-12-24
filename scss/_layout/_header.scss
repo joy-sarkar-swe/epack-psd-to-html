@@ -1,0 +1,71 @@
+// _layout/_header.scss
+
+/* Add or modify styles specific to the header of the page */
+header {
+  max-width: 1240px;
+  width: 100%;
+  max-height: 120px;
+  height: 100%;
+
+  a.navbar-brand {
+    width: 245px;
+    height: 60px;
+
+    @media #{$screen-lg} {
+      width: 200px;
+    }
+
+    @media #{$screen-xxl} {
+      width: 245px;
+    }
+  }
+
+  .nav-item {
+    padding-left: 20px;
+
+    @media #{$screen-lg} {
+      padding-left: 12px;
+    }
+
+    @media #{$screen-xl} {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #0060ac;
+      font-size: 16px;
+      font-family: "Poppins";
+
+      @media #{$screen-lg} {
+        font-size: 15px;
+      }
+
+      @media #{$screen-xl} {
+        font-size: 16px;
+      }
+    }
+  }
+
+  form {
+    margin-left: 35px;
+
+    .entrar_btn {
+      border: 1px solid #ff8b00;
+      color: #ff8b00;
+      font-size: 15px;
+      margin-right: 15px;
+      width: 128px;
+      height: 40px;
+      border-radius: 28px;
+    }
+
+    .registro_btn {
+      border: 1px solid #ff8b00;
+      background: #ff8b00;
+      font-size: 15px;
+      width: 128px;
+      height: 40px;
+      border-radius: 28px;
+    }
+  }
+}

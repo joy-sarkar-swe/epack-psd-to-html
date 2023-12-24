@@ -1,0 +1,287 @@
+// _pages/_contact.scss
+
+/* Add or modify styles specific to the contact page */
+
+main .tarif_hero_container {
+  position: relative;
+  margin-top: -57px;
+}
+
+main {
+  background-color: #e7dcf7;
+
+  // Banner Section CSS
+  .tarif_hero_container {
+    position: relative;
+
+    .tarif_banner_container {
+      background: url(./../../assets/images/tarifas/bannerBgFdx.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      padding: 75px 15px 75px;
+      overflow: hidden !important;
+      margin-bottom: 42px;
+      height: 290px;
+      width: 100vw;
+
+      .tarif_banner_section {
+        max-width: 1240px;
+        width: 100%;
+        display: flex;
+
+        .left_side {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+
+          .fdx_image {
+            max-width: 100px;
+            width: 100%;
+            max-height: 100px;
+            height: 100%;
+            @media #{$screen-md} {
+              max-height: 170px;
+              max-width: 170px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .banner_text {
+            h1 {
+              font-size: 25px;
+              @media #{$screen-sm} {
+                font-size: 44px;
+              }
+            }
+
+            p {
+              font-size: 20px;
+              @media #{$screen-sm} {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+
+        .right_side {
+          max-width: 200px;
+          width: 100%;
+          margin: 0 auto;
+          position: absolute;
+          right: 5%;
+          bottom: -2%;
+
+          right: 5%;
+          @media #{$screen-sm} {
+            max-width: 260px;
+            bottom: -5%;
+          }
+
+          @media #{$screen-sm} {
+            max-width: 260px;
+            right: 5%;
+            bottom: -5%;
+          }
+
+          @media #{$screen-md} {
+            max-width: 300px;
+            right: 12%;
+            bottom: -7%;
+          }
+          @media #{$screen-lg} {
+            max-width: 370px;
+            right: 12%;
+            bottom: -10%;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // Tarifas Section CSS
+  .tarifas_package_section {
+    .mt-30px {
+      margin-top: 20px;
+    }
+    margin-top: 90px;
+
+    .cargos_title {
+      font-size: 30px;
+
+      color: #4d148c;
+    }
+
+    .cargos_table {
+      tbody {
+        tr {
+          td {
+            width: 200px;
+          }
+        }
+      }
+    }
+
+    table {
+      border-color: #d2c4e2;
+
+      th {
+        background: #4d148c !important;
+        font-size: 15px;
+        padding: 10px 0px;
+      }
+
+      tbody {
+        tr:nth-child(even) {
+          td {
+            background-color: #f6f3f9;
+          }
+        }
+
+        tr {
+          td {
+            color: #373736;
+          }
+        }
+      }
+    }
+
+    .accordion {
+      max-width: 610px;
+      width: 100%;
+
+      .accordion-item {
+        .accordion-header {
+          .accordion-button:focus {
+            box-shadow: none;
+          }
+          .accordion-button {
+            line-height: 30px;
+            font-size: 22px;
+          }
+
+          .accordion-button-one {
+            background-color: #00c868;
+          }
+          .accordion-button-two {
+            background-color: red;
+          }
+
+          .accordion-button-one,
+          .accordion-button-two {
+            span {
+              font-size: 32px;
+              padding-right: 10px;
+              background: transparent;
+              font-weight: 600;
+            }
+          }
+
+          .accordion-button:after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+          }
+          .accordion-button:not(.collapsed):after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+          }
+        }
+
+        .accordion-body {
+          padding: 20px 0px;
+
+          .list-group {
+            .list-group-item {
+              color: #373736;
+              font-size: 18px;
+
+              span {
+                color: #00c868;
+                font-size: 18px;
+                padding-right: 5px;
+              }
+            }
+
+            .list-group-item2 {
+              color: #373736;
+              font-size: 18px;
+              list-style: none;
+              line-height: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// contactanos section
+.contactanos {
+  background: url(../../assets/images/tarifas/curveWhiteBg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  .robot_img {
+    max-width: 866px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .green_text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0060ac;
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  .contact_button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    .email_button {
+      a {
+        width: 300px;
+        height: 60px;
+        background: #0060ac;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        display: inline-block;
+        line-height: 60px;
+        border-radius: 25px;
+        text-decoration: none;
+      }
+      .bg_green {
+        background: #00c868 !important;
+      }
+    }
+  }
+  .banner_button {
+    display: flex;
+    justify-content: center;
+    a {
+      width: 260px;
+      height: 60px;
+      background: #ff8b00;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      display: inline-block;
+      line-height: 60px;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+  }
+}

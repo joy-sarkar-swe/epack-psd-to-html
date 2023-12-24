@@ -1,0 +1,40 @@
+// _base/_reset.scss
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./../../public/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+figure,
+blockquote,
+dl,
+dd,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+/* Add more reset styles as needed */
